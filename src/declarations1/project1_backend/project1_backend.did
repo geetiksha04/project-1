@@ -1,0 +1,15 @@
+type TimeDataInput = 
+ record {
+   date: nat32;
+   month: nat32;
+   year: nat32;
+ };
+type TimeData = 
+ record {
+   day: nat32;
+   month: nat32;
+   year: nat32;
+ };
+service : {
+  ageCalculate: (TimeDataInput, TimeDataInput) -> (TimeData);
+}
